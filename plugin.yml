@@ -1,13 +1,13 @@
 main : Electro\TransferMe\Main
 name: TransferMe
-version: 2.0.0
-api: 4.0.0
+version: 3.0.0
+api: 5.0.0
 Author: Electro
 
 commands:
-  transfer:
+  goto:
     description: Transfer Yourself or Others to Another Server
-    aliases: [transferme]
+    aliases: [transfer]
     permission: transferme.cmd
 
 permissions:
