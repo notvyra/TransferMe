@@ -11,7 +11,7 @@ use pocketmine\player\Player;
 class Main extends PluginBase implements Listener{
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool{
         switch($command->getName()){
-            case "transfer":
+            case "goto":
                 if (isset($args[0])){
                     if (isset($args[1])){
                         if (!isset($args[2])){
@@ -38,11 +38,11 @@ class Main extends PluginBase implements Listener{
                         }
                     }
                     else{
-                        $sender->sendMessage("§cUsage: §a/transfer {IP} {Port} <PlayerName | all>");
+                        $sender->sendMessage("§cUsage: §a/goto (IP) (PORT) <PlayerName | all>");
                     }
                 }
                 else{
-                    $sender->sendMessage("§cUsage: §a/transfer {IP} {Port} <PlayerName | all>");
+                    $sender->sendMessage("§cUsage: §a/goto (IP) (PORT) <PlayerName | all>");
                 }
         }
         return true;
