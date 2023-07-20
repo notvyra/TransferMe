@@ -1,8 +1,8 @@
 # Information 
  - Transfer yourself, another player, or all online players to another server.
 # Commands
+- /goto
 - /transfer
-- /transferme
 # Permissions
 - Permission: transferme.cmd
 # Credits
